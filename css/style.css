@@ -78,6 +78,39 @@ html {
     width: 100%;
   }
 
+  .header__navigation a::after,
+  .header__navigation a:after {
+    content: "";
+    height: 4px;
+    width: 0;
+    border-radius: 20px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: var(--white);
+    transition-duration: 0.5s;
+    transition-property: width;
+  }
+
+  .header__navigation .active::after,
+  .header__navigation .active:after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: var(--white);
+    transition-duration: 0.5s;
+    transition-property: width;
+  }
+
+  .header__navigation a:hover::after,
+  .header__navigation a:active::after {
+    width: 100%;
+  }
+
   .title1 {
     text-align: center;
     font-size: 70px;
@@ -381,6 +414,39 @@ html {
   }
 
   .header__navigation a:hover::after {
+    width: 100%;
+  }
+
+  .header__navigation a::after,
+  .header__navigation a:after {
+    content: "";
+    height: 4px;
+    width: 0;
+    border-radius: 20px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: var(--white);
+    transition-duration: 0.5s;
+    transition-property: width;
+  }
+
+  .header__navigation .active::after,
+  .header__navigation .active:after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: var(--white);
+    transition-duration: 0.5s;
+    transition-property: width;
+  }
+
+  .header__navigation a:hover::after,
+  .header__navigation a:active::after {
     width: 100%;
   }
 
@@ -689,6 +755,39 @@ html {
     }
 
     .header__navigation a:hover::after {
+      width: 100%;
+    }
+
+    .header__navigation a::after,
+    .header__navigation a:after {
+      content: "";
+      height: 4px;
+      width: 0;
+      border-radius: 20px;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: var(--white);
+      transition-duration: 0.5s;
+      transition-property: width;
+    }
+
+    .header__navigation .active::after,
+    .header__navigation .active:after {
+      content: "";
+      height: 4px;
+      width: 100%;
+      border-radius: 20px;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: var(--white);
+      transition-duration: 0.5s;
+      transition-property: width;
+    }
+
+    .header__navigation a:hover::after,
+    .header__navigation a:active::after {
       width: 100%;
     }
 
