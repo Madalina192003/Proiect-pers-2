@@ -9,17 +9,19 @@
   <body>
     <div class="container">
       <header>
+      <div class="header__logo">
         <a href="#"
           ><img src="./images/logo-adare-restaurant.png" alt="Logo"
         /></a>
+        </div>
       </header>
 
       <nav class="header__navigation">
         <ul>
           <li><a href="#Home" class="active">Home</a></li>
           <li><a href="#About-us">About us</a></li>
-          <li><a href="#Galerie">Galerie</a></li>
-          <li><a href="#Rezervare">Rezervare</a></li>
+          <li><a href="#Galery">Galery</a></li>
+          <li><a href="#Rezervation">Rezervation</a></li>
         </ul>
       </nav>
 
@@ -57,19 +59,19 @@
         <div data-modal-content>
           <button data-modal-close type="button">X</button>
           <h2 class="modal-title">
-            Lăsați-vă informațiile și vă vom suna înapoi
+            Leave your information and we will call you back
           </h2>
 
           <form name="modal-form" class="modal-form">
             <label class="modal-form__position"
-              >Nume și prenume
+              >Name and surname
               <input type="text" name="username" class="modal-form__input" />
               <svg width="12px" height="12px">
                 <use href="./img/icons/form-icons.svg#icon-person"></use>
               </svg>
             </label>
             <label class="modal-form__position">
-              Telefon
+              Phone
               <input type="tel" name="userphone" class="modal-form__input" />
               <svg width="12px" height="12px">
                 <use href="./img/icons/form-icons.svg#icon-phone"></use>
@@ -83,10 +85,10 @@
               </svg>
             </label>
             <label class="modal-form__position">
-              Mesaj
+              Message
               <textarea
                 name="mesaj"
-                placeholder="Introdu mesajul tau"
+                placeholder="Enter your message"
                 class="modal-form__comments"
                 rows="5"
               ></textarea>
@@ -99,12 +101,10 @@
                 class="modal-form__input"
               />
               <span class="replace-checkbox modal-checkbox__position">
-                <svg>
-                  <use href="./img/icons/form-icons.svg#icon-checked"></use>
-                </svg>
+                
               </span>
-              Sunt de acord cu formularul și accept
-              <a href="#" class="condition">Termenii și condițiile</a>
+              I agree with the form and accept
+              <a href="#" class="condition">Terms and conditions</a>
             </label>
 
             <button type="submit" class="modal-form__btn">Submit</button>
