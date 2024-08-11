@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adare Restaurant</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="#"
+          ><img src="./images/logo-adare-restaurant.png" alt="Logo"
+        /></a>
+      </header>
+
+      <nav class="header__navigation">
+        <ul>
+          <li><a href="#Home" class="active">Home</a></li>
+          <li><a href="#About-us">About us</a></li>
+          <li><a href="#Galerie">Galerie</a></li>
+          <li><a href="#Rezervare">Rezervare</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <h1 class="title1">let's meat</h1>
+        <div class="centered-paragraph">
+          <p class="phg1">
+            We love sharing good food with great people. We bring over 30 years
+            industry experience and passion to Adare. </br>With a dishes that are
+            carefully designed to bring you a truly satisfying Irish food
+            experience that you are sure to remember.
+          </p>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.4927886636397!2d21.235556676118488!3d45.701149971078834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455c267e37b893%3A0x72c8bcefbff106bb!2sStr.%20Semenic%2021%2C%20Giroc%20307221!5e0!3m2!1sro!2sro!4v1723389783076!5m2!1sro!2sro"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="button-container">
+          <button data-modal-open class="button">Make a reservation</button>
+        </div>
+      </main>
+      <footer>
+        <p class="phg2">
+          Romania, Timisoara,Str.Semenic,nr21 - Copyright 2017©
+        </p>
+      </footer>
+
+      <div data-modal class="is-hidden">
+        <div data-modal-content>
+          <button data-modal-close type="button">X</button>
+          <h2 class="modal-title">
+            Lăsați-vă informațiile și vă vom suna înapoi
+          </h2>
+
+          <form name="modal-form" class="modal-form">
+            <label class="modal-form__position"
+              >Nume și prenume
+              <input type="text" name="username" class="modal-form__input" />
+              <svg width="12px" height="12px">
+                <use href="./img/icons/form-icons.svg#icon-person"></use>
+              </svg>
+            </label>
+            <label class="modal-form__position">
+              Telefon
+              <input type="tel" name="userphone" class="modal-form__input" />
+              <svg width="12px" height="12px">
+                <use href="./img/icons/form-icons.svg#icon-phone"></use>
+              </svg>
+            </label>
+            <label class="modal-form__position">
+              E-mail
+              <input type="email" name="useremail" class="modal-form__input" />
+              <svg width="12px" height="12px">
+                <use href="./img/icons/form-icons.svg#icon-email"></use>
+              </svg>
+            </label>
+            <label class="modal-form__position">
+              Mesaj
+              <textarea
+                name="mesaj"
+                placeholder="Introdu mesajul tau"
+                class="modal-form__comments"
+                rows="5"
+              ></textarea>
+            </label>
+            <label class="modal-form__position modal-form__checked"
+              ><input
+                type="checkbox"
+                name="agree"
+                value="agree"
+                class="modal-form__input"
+              />
+              <span class="replace-checkbox modal-checkbox__position">
+                <svg>
+                  <use href="./img/icons/form-icons.svg#icon-checked"></use>
+                </svg>
+              </span>
+              Sunt de acord cu formularul și accept
+              <a href="#" class="condition">Termenii și condițiile</a>
+            </label>
+
+            <button type="submit" class="modal-form__btn">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <script src="./modal.js"></script>
+    </div>
+  </body>
+</html>
